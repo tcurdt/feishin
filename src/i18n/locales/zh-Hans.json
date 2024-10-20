@@ -20,7 +20,8 @@
         "openIn": {
             "lastfm": "在 Last.fm 中打开",
             "musicbrainz": "在 MusicBrainz 中打开"
-        }
+        },
+        "moveToNext": "移至下一首"
     },
     "common": {
         "increase": "增高",
@@ -127,7 +128,8 @@
         "smartPlaylist": "智能$t(entity.playlist_one)",
         "genreWithCount_other": "{{count}} 种流派",
         "trackWithCount_other": "{{count}} 首乐曲",
-        "play_other": "{{count}} 次播放"
+        "play_other": "{{count}} 次播放",
+        "song_other": "歌曲"
     },
     "player": {
         "repeat_all": "循环全部",
@@ -159,7 +161,8 @@
         "skip_forward": "向前跳过",
         "playbackSpeed": "播放速度",
         "pause": "暂停",
-        "playSimilarSongs": "播放类似的曲目"
+        "playSimilarSongs": "播放类似的曲目",
+        "viewQueue": "查看播放队列"
     },
     "setting": {
         "crossfadeStyle_description": "选择用于音频播放器的淡入淡出风格",
@@ -351,7 +354,7 @@
         "volumeWidth": "音量滑块宽度",
         "volumeWidth_description": "音量滑块的宽度",
         "discordListening": "显示状态为正在监听",
-        "discordListening_description": "将状态显示为 “正在监听”，而不是 “正在播放”。请注意，这当前会破坏计时器栏",
+        "discordListening_description": "将状态显示为正在监听，而不是正在播放",
         "contextMenu_description": "允许您隐藏右键单击项目时显示在菜单中的项目。未选中的项目将被隐藏",
         "customCssEnable_description": "允许编写自定义 css。",
         "customCss": "自定义css",
@@ -483,12 +486,14 @@
                 "lyricGap": "歌词间距",
                 "followCurrentLyric": "跟随当前歌词",
                 "dynamicImageBlur": "图像模糊大小",
-                "dynamicIsImage": "启用背景图像"
+                "dynamicIsImage": "启用背景图像",
+                "lyricOffset": "歌词延迟补偿（毫秒）"
             },
             "lyrics": "歌词",
             "related": "相关",
             "upNext": "即将播放",
-            "visualizer": "可视化"
+            "visualizer": "可视化",
+            "noLyrics": "未找到歌词"
         },
         "appMenu": {
             "selectServer": "选择服务器",
@@ -550,7 +555,8 @@
             "shareItem": "分享项目",
             "playSimilarSongs": "$t(player.playSimilarSongs)",
             "download": "下载",
-            "playShuffled": "$t(player.shuffle)"
+            "playShuffled": "$t(player.shuffle)",
+            "moveToNext": "$t(action.moveToNext)"
         },
         "trackList": {
             "title": "$t(entity.track_other)",
@@ -591,6 +597,14 @@
         },
         "playlist": {
             "reorder": "仅在按 ID 排序时启用重排序"
+        },
+        "manageServers": {
+            "url": "URL",
+            "title": "管理服务器",
+            "serverDetails": "服务器详细信息",
+            "username": "用户名",
+            "editServerDetailsTooltip": "编辑服务器详细信息",
+            "removeServer": "移除服务器"
         }
     },
     "form": {
@@ -662,7 +676,8 @@
                 "autoFitColumns": "列宽自适应",
                 "size": "$t(common.size)",
                 "itemGap": "项目间隙（px）",
-                "itemSize": "项目大小 (px)"
+                "itemSize": "项目大小 (px)",
+                "followCurrentSong": "关注当前播放的歌曲"
             },
             "view": {
                 "table": "表格",

@@ -29,7 +29,8 @@
         "mute": "silencio",
         "skip_forward": "saltar hacia delante",
         "pause": "pausa",
-        "playSimilarSongs": "Reproducir canciones similares"
+        "playSimilarSongs": "Reproducir canciones similares",
+        "viewQueue": "ver cola"
     },
     "setting": {
         "crossfadeStyle_description": "selecciona el estilo de crossfade a usar por el reproductor de audio",
@@ -220,7 +221,7 @@
         "doubleClickBehavior_description": "si es true, se pondrán en cola todas las pistas que coincidan en una búsqueda de pistas. De lo contrario, solo se pondrá en cola la pista seleccionada",
         "volumeWidth": "Ancho del deslizador de volumen",
         "volumeWidth_description": "La anchura del deslizador de volumen",
-        "discordListening_description": "Muestra el estado como escuchando en lugar de reproduciendo. Ten en cuenta que esto actualmente rompe la barra de tiempo",
+        "discordListening_description": "mostrar el estado como escuchando en lugar de jugando",
         "discordListening": "Mostrar estado como escuchando",
         "contextMenu": "Configuración del menú de contexto (clic derecho)",
         "contextMenu_description": "Te permite esconder elementos que son mostrados en el menú cuando haces clic derecho en un elemento. Los elementos que no estén seleccionados serán escondidos",
@@ -277,7 +278,8 @@
         "openIn": {
             "lastfm": "Abrir en Last.fm",
             "musicbrainz": "Abrir en MusicBrainz"
-        }
+        },
+        "moveToNext": "pasar al siguiente"
     },
     "common": {
         "backward": "hacia atrás",
@@ -489,7 +491,8 @@
             "showDetails": "Obtener información",
             "playSimilarSongs": "$t(player.playSimilarSongs)",
             "download": "descargar",
-            "playShuffled": "$t(player.shuffle)"
+            "playShuffled": "$t(player.shuffle)",
+            "moveToNext": "$t(action.moveToNext)"
         },
         "home": {
             "mostPlayed": "más reproducidos",
@@ -513,11 +516,13 @@
                 "showLyricMatch": "mostrar coincidencia de letras",
                 "lyricGap": "desfase de letra",
                 "dynamicImageBlur": "tamaño de desenfoque de imagen",
-                "dynamicIsImage": "habilitar imagen de fondo"
+                "dynamicIsImage": "habilitar imagen de fondo",
+                "lyricOffset": "compensación de letras (ms)"
             },
             "lyrics": "letras",
             "related": "relacionado",
-            "visualizer": "visualizador"
+            "visualizer": "visualizador",
+            "noLyrics": "sin letras"
         },
         "albumDetail": {
             "moreFromArtist": "más de este $t(entity.artist_one)",
@@ -578,6 +583,14 @@
         },
         "playlist": {
             "reorder": "la reordenación solo se activa al ordenar por id"
+        },
+        "manageServers": {
+            "removeServer": "eliminar servidor",
+            "title": "administrar servidores",
+            "serverDetails": "detalles del servidor",
+            "username": "nombre de usuario",
+            "editServerDetailsTooltip": "editar detalles del servidor",
+            "url": "URL"
         }
     },
     "form": {
@@ -705,7 +718,8 @@
                 "size": "$t(common.size)",
                 "displayType": "tipo de visualización",
                 "itemGap": "espacio entre elementos (px)",
-                "itemSize": "tamaño del elemento (px)"
+                "itemSize": "tamaño del elemento (px)",
+                "followCurrentSong": "seguir la canción actual"
             },
             "view": {
                 "card": "tarjeta",
@@ -763,6 +777,9 @@
         "trackWithCount_other": "{{count}} pistas",
         "play_one": "Reproducir {{count}}",
         "play_many": "Reproducir {{count}}",
-        "play_other": "Reproducir {{count}}"
+        "play_other": "Reproducir {{count}}",
+        "song_one": "canción",
+        "song_many": "canciones",
+        "song_other": "canciones"
     }
 }
